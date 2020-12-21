@@ -14,8 +14,8 @@ To classify Hypersectral Images using transfer learning, following steps are exe
 
 2. Once the samples are extracted, two methods below have been used to split the extracted samples into training & test sets.
    
-   V1 : Specific number of samples from each class are put into the training set. This methods follows the train 
-        test split tables mentioned in the paper.
+   **V1** : Specific number of samples from each class are put into the training set. This methods follows the train 
+            test split tables mentioned in the paper.
         
-   V2 : Some percentage of samples are put into the training set and the rest are added to the test set.
+   **V2** : Some percentage of samples are put into the training set and the rest are added to the test set.
    
