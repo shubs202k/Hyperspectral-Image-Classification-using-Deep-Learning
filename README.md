@@ -19,8 +19,10 @@ To classify Hypersectral Images using transfer learning, following steps are exe
         
    **V2** : Some percentage of samples are put into the training set and the rest are added to the test set.
    
-Folder Details
+## Folder Details
 
 Datasets : mat files of image and ground truth for Indian Pines, Botswana & Pavia datasets.
+
 V1 : Implementation of SGCNN with traning and test set split as mentioned in the paper.
+
 V2 : Some percentage of samples into training set and rest in test set for datasets created with different overlap ratios.
