@@ -1,14 +1,16 @@
 # Hyperspectral-Image-Classification-using-Deep-Learning
 Hyperspectral Image Classification using Deep Neural Network Architectures with Transfer Learning
 
-This is an attempt to implement SGCNN(Shuffled Group Convolutional Neural Network) models from the paper https://www.mdpi.com/2072-4292/12/11/1780.
+This is an attempt to implement SGCNN-X (Shuffled Group Convolutional Neural Network) models from the paper https://www.mdpi.com/2072-4292/12/11/1780 where X represents the number of convolution layers. 
 
 To classify Hypersectral Images using transfer learning, following steps are executed
 (Source : Indian Pines, Target : Botswana)
 
-1. Samples of size **S X S X 64** from the image and labels are assigned to those samples using ground truth image. Samples are extracted using a variable
-   overlap_ratio which leads to generation of several datasets. An overlap ratio of 25% implies that a sample belonging to a class will be selected if and only if
-   the next sample from same class does not overlap more than 25% for this sample.
+1. Samples of size **S X S X 64** (S - sample size,) from the image and labels are assigned to those samples using ground truth image. Samples are extracted using a 
+   variable overlap_ratio which leads to generation of several datasets. An overlap ratio of 25% implies that a sample belonging to a class will be selected if and 
+   only if the next sample from same class does not overlap more than 25% for this sample.
+   
+   Sample size (cube size) chosen is 20 (19 in paper)
    
    Center pixel from the ground truth image is used to assign label to a sample.
    
