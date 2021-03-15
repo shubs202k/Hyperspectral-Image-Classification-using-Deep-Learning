@@ -18,11 +18,11 @@ To classify Hypersectral Images using transfer learning, following steps are exe
 
 2. Once the samples are extracted, two methods below have been used to split the extracted samples into training & test sets.
    
-   **V1** : Specific number of samples from each class are put into the training set. This methods follows the train 
-            test split tables mentioned in the paper.
+   **V1** : Specific number of samples from each class are put into the training set for pretraining (source) as well as fine tuning (target). 
+            This methods follows the train test split tables mentioned in the paper.
         
-   **V2** : Some percentage of samples are put into the training set and the rest are added to the test set.
-            Models in folder SGCNN_7, SGCNN_8 & SGCNN_12 use this train test split method.
+   **Other** : Some percentage of samples are put into the training set and the rest are added to the test set.
+               Models in folder SGCNN_7, SGCNN_8 & SGCNN_12 use this train test split method.
    
 ## Folder Details
 
@@ -35,8 +35,3 @@ SGCNN_7 : Implementation of SGCNN-7 architecture from the paper. Model is traine
 SGCNN_8 : Implementation of SGCNN-8 architecture from the paper. Model is trained on Indian Pines and fine tuned on Botswana.
 
 SGCNN_12 : Implementation of SGCNN-12 architecture from the paper. Model is trained on Indian Pines and fine tuned on Botswana.
-
-SGCNN_8_Utils.py, SGCNN_7_Utils.py & SGCNN_12_Utils.py : Python code that builds respective model architectures, sample extraction and train test split functions.
-                                                         Involves shuffled group convolution units that do group convolution based on a variable cardinality(paths                                                            along which channels are split into and convolution is done seperately for all paths) along with the                                                                channel shuffle operation. Includes models used pretraining on source and finetuning on target.
-
-sample_extraction_V1_utils.py : Python code for extracting samples with overlap ratio. Train test split for different datasets as mentioned in paper.
