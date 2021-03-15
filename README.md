@@ -33,6 +33,8 @@ V1 : Implementation of SGCNN with traning and test set split as mentioned in the
 The following folders implement a training test split where a percentage of samples from each class are added to the training set while the rest are
 added to the test set. This split is done at both the pretraining stage and the fine tuning stage.
 
+## The python files in all folders implement the sample extraction, train test split, model training, transfer learning and model architecture functions.
+
 SGCNN_7 : Implementation of SGCNN-7 architecture from the paper. Model is trained on Indian Pines and fine tuned on Botswana.
 
 SGCNN_8 : Implementation of SGCNN-8 architecture from the paper. Model is trained on Indian Pines and fine tuned on Botswana.
